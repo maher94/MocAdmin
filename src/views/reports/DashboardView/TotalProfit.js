@@ -29,7 +29,7 @@ const TotalProfit = ({ className, ...rest }) => {
   const [lensesProfit, setLensesProfit] = React.useState(0);
   const [productProfit, setProductProfit] = React.useState(0);
   useEffect(() => {
-    Axios.get('http://localhost:4000/ordersLentille/totalProfitLenses')
+    Axios.get('http://mocbackend.cleverapps.io/ordersLentille/totalProfitLenses')
           .then(response =>{  setLensesProfit(response.data.data[0].lensesProfit);}
     
           )
@@ -38,7 +38,7 @@ const TotalProfit = ({ className, ...rest }) => {
             console.log(error);
           })
          
-        Axios.get('http://localhost:4000/ordersProduit/totalProfitProduct')
+        Axios.get('http://mocbackend.cleverapps.io/ordersProduit/totalProfitProduct')
         .then(response =>{  setProductProfit(response.data.data[0].ProductProfit);}
   
         )
