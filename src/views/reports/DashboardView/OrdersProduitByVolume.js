@@ -28,7 +28,7 @@ class OrdersProduitByVolume extends Component {
   }
   productByVolume = () => {
      
-    fetch('http://localhost:4000/ordersProduit/getNborderbyVolume' )
+    fetch('http://mocbackend.cleverapps.io/ordersProduit/getNborderbyVolume' )
     .then(response=>response.json())
     .then(response=>this.setState({ result: response.data }))
     .catch(err=>console.error(err))

@@ -9,7 +9,7 @@ export const updateStatus = (orderid, OrderType,status) => {
   
 
   // url de backend
-  const baseUrl = "http://localhost:4000/orders" + OrderType + "/updateStatus/" + element
+  const baseUrl = "http://mocbackend.cleverapps.io/orders" + OrderType + "/updateStatus/" + element
   // parameter data post
   const datapost = {
     Status: status,
@@ -38,8 +38,8 @@ export const lensesPayment = (orderid, amount) => {
 
  
   // url de backend
-  const baseUrl = "http://localhost:4000/ordersLentille/LensesPayment/"+amount+"/"+ orderid
-  const UrlAmoutStillTopay = "http://localhost:4000/ordersLentille/amountStillToPay/"+ orderid
+  const baseUrl = "http://mocbackend.cleverapps.io/ordersLentille/LensesPayment/"+amount+"/"+ orderid
+  const UrlAmoutStillTopay = "http://mocbackend.cleverapps.io/ordersLentille/amountStillToPay/"+ orderid
   axios.get(baseUrl)
     .then(response => {
      
@@ -50,7 +50,7 @@ export const lensesPayment = (orderid, amount) => {
           if (response.data.success==true) {
             
            if(response2.data.data[0].amountStillToPay==0) {
-            const baseUrl2 = "http://localhost:4000/ordersLentille/updateStatus/" + orderid
+            const baseUrl2 = "http://mocbackend.cleverapps.io/ordersLentille/updateStatus/" + orderid
              
             const datapost = {
               Status: "Paid",
@@ -86,8 +86,8 @@ export const productPayment = (orderid, amount) => {
 
  
   // url de backend
-  const baseUrl = "http://localhost:4000/ordersProduit/productPayment/"+amount+"/"+ orderid
-  const UrlAmoutStillTopay = "http://localhost:4000/ordersProduit/amountStillToPay/"+ orderid
+  const baseUrl = "http://mocbackend.cleverapps.io/ordersProduit/productPayment/"+amount+"/"+ orderid
+  const UrlAmoutStillTopay = "http://mocbackend.cleverapps.io/ordersProduit/amountStillToPay/"+ orderid
 
   axios.get(baseUrl)
     .then(response => {
@@ -99,7 +99,7 @@ export const productPayment = (orderid, amount) => {
           if (response.data.success==true) {
             
            if(response2.data.data[0].amountStillToPay==0) {
-            const baseUrl2 = "http://localhost:4000/ordersProduit/updateStatus/" + orderid
+            const baseUrl2 = "http://mocbackend.cleverapps.io/ordersProduit/updateStatus/" + orderid
              
             const datapost = {
               Status: "Paid",

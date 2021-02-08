@@ -33,7 +33,7 @@ const TasksProgress = ({ className, ...rest }) => {
   const [totalProduct, setTotalProduct] = React.useState(0);
 
   useEffect(() => {
-  Axios.get('http://localhost:4000/ordersLentille/countPercentage')
+  Axios.get('http://mocbackend.cleverapps.io/ordersLentille/countPercentage')
         .then(response =>{  setTotal(response.data.data[0].total); setTotalLenses(response.data.data[0].nbLenses); setTotalProduct(response.data.data[0].nbProduct)}
   
         )

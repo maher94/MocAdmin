@@ -28,7 +28,7 @@ class SalesProduct extends Component {
   }
   salesPerMonth = () => {
      
-    fetch('http://localhost:4000/ordersProduit/getNbOrdersByMonth' )
+    fetch('http://mocbackend.cleverapps.io/ordersProduit/getNbOrdersByMonth' )
     .then(response=>response.json())
     .then(response=>this.setState({ result: response.data }))
     .catch(err=>console.error(err))
