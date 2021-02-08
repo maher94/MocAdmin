@@ -28,7 +28,7 @@ class OrdersLensesByStatus extends Component {
   }
   nbOrderByStatus = () => {
      
-    fetch('http://mocbackend.cleverapps.io/ordersLentille/getNborderbyStatus' )
+    fetch('http://localhost:4000/ordersLentille/getNborderbyStatus' )
     .then(response=>response.json())
     .then(response=>this.setState({ result: response.data }))
     .catch(err=>console.error(err))

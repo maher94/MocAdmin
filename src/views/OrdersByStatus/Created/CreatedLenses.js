@@ -105,7 +105,7 @@ const CreatedLenses = () => {
     }
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersLentille//listCreatedLensesOrders'
+          let url = 'http://localhost:4000/ordersLentille//listCreatedLensesOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

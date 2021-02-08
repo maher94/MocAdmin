@@ -133,7 +133,7 @@ const ValidatedLenses = () => {
     }
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersLentille//listValidatedLensesOrders'
+          let url = 'http://localhost:4000/ordersLentille//listValidatedLensesOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

@@ -154,7 +154,7 @@ const PaidProduct = () => {
       ]}
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersProduit//listPaidProductOrders'
+          let url = 'http://localhost:4000/ordersProduit//listPaidProductOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

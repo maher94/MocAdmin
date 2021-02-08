@@ -38,7 +38,7 @@ class Products extends Component {
   getListOrdersProducts = _ => {
 
     const userId = JSON.parse(localStorage.getItem('user'));
-    fetch('http://mocbackend.cleverapps.io/ordersProduit/listProduct')
+    fetch('http://localhost:4000/ordersProduit/listProduct')
       .then(response => response.json())
       .then(response => this.setState({ data: response.data }))
       .catch(err => console.error(err))

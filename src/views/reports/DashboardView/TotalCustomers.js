@@ -37,7 +37,7 @@ const TotalCustomers = ({ className, ...rest }) => {
   const [nb, setNB] = React.useState(0);
 
   useEffect(() => {
-  Axios.get('http://mocbackend.cleverapps.io/api/user/countClient')
+  Axios.get('http://localhost:4000/api/user/countClient')
         .then(response => setNB(response.data.data[0].nb)
   
         )

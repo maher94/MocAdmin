@@ -47,7 +47,7 @@ const CustomerListView = () => {
   const [clients, setClients] = useState({});
 
   async function fetchData() {
-    const res = await fetch("http://mocbackend.cleverapps.io/api/user/list5Clients/");
+    const res = await fetch("http://localhost:4000/api/user/list5Clients/");
     res
       .json()
       .then(res => setClients(res.data))
@@ -103,7 +103,7 @@ const CustomerListView = () => {
       ]}
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/api/user/list/'
+          let url = 'http://localhost:4000/api/user/list/'
           fetch(url)
             .then(response => response.json())
             .then(result => {

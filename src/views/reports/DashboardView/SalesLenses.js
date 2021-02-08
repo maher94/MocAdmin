@@ -31,7 +31,7 @@ class SalesLenses extends Component {
   }
   salesPerMonth = () => {
      
-    fetch('http://mocbackend.cleverapps.io/ordersLentille/getNbOrdersByMonth' )
+    fetch('http://localhost:4000/ordersLentille/getNbOrdersByMonth' )
     .then(response=>response.json())
     .then(response=>this.setState({ result: response.data }))
     .catch(err=>console.error(err))
