@@ -127,7 +127,7 @@ const RejectedLenses = () => {
     }
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersLentille//listRejectedLensesOrders'
+          let url = 'https://mocbackend.cleverapps.io/ordersLentille//listRejectedLensesOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

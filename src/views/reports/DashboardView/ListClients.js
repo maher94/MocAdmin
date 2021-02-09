@@ -28,7 +28,7 @@ class ListClients extends Component {
   }
   getClientsInformations = _ => {
     
-    fetch('http://mocbackend.cleverapps.io/api/user/list5Clients/')
+    fetch('https://mocbackend.cleverapps.io/api/user/list5Clients/')
        .then(response => response.json())
        .then(response => this.setState({ data: response.data }))
        .catch(err => console.error(err))

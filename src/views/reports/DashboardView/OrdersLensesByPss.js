@@ -28,7 +28,7 @@ class OrdersLensesByPss extends Component {
   }
   salesPerMonth = () => {
      
-    fetch('http://mocbackend.cleverapps.io/ordersLentille/getNborderbyPss' )
+    fetch('https://mocbackend.cleverapps.io/ordersLentille/getNborderbyPss' )
     .then(response=>response.json())
     .then(response=>this.setState({ result: response.data }))
     .catch(err=>console.error(err))

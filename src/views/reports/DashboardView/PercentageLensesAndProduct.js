@@ -26,7 +26,7 @@ class PercentageLensesAndProduct extends Component {
     this.percentages();
   }
   percentages = () => {
-    axios.get('http://mocbackend.cleverapps.io/ordersLentille/countPercentage')
+    axios.get('https://mocbackend.cleverapps.io/ordersLentille/countPercentage')
       .then(response => this.setState({ nblenses: response.data.data[0].nbLenses, nbproducts: response.data.data[0].nbProduct, total: response.data.data[0].total })
 
       )

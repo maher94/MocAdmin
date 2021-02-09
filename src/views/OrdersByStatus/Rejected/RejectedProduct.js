@@ -120,7 +120,7 @@ const RejectedProduct = () => {
       ]}
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersProduit//listRejectedProductOrders'
+          let url = 'https://mocbackend.cleverapps.io/ordersProduit//listRejectedProductOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

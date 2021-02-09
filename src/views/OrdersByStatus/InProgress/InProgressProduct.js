@@ -126,7 +126,7 @@ const InProgressProduct = () => {
       ]}
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersProduit//listInProgressProductOrders'
+          let url = 'https://mocbackend.cleverapps.io/ordersProduit//listInProgressProductOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

@@ -152,7 +152,7 @@ const PartiallyPaidProduct = () => {
       ]}
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersProduit//listPartiallyPaidProductOrders'
+          let url = 'https://mocbackend.cleverapps.io/ordersProduit//listPartiallyPaidProductOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {

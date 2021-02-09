@@ -31,7 +31,7 @@ class LatestOrders extends Component {
   getListOrdersProduct = _ => {
 
 
-    fetch('http://mocbackend.cleverapps.io/ordersProduit/AllOrders/')
+    fetch('https://mocbackend.cleverapps.io/ordersProduit/AllOrders/')
       .then(response => response.json())
       .then(response => this.setState({ data: response.data }))
       .catch(err => console.error(err))

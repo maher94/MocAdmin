@@ -134,7 +134,7 @@ const InProgressLenses = () => {
     }
       data={query =>
         new Promise((resolve, reject) => {
-          let url = 'http://mocbackend.cleverapps.io/ordersLentille//listInProgressLensesOrders'
+          let url = 'https://mocbackend.cleverapps.io/ordersLentille//listInProgressLensesOrders'
           fetch(url)
             .then(response => response.json())
             .then(result => {
