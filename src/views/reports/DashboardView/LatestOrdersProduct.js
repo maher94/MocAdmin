@@ -1,6 +1,8 @@
 import React, { useState, Component } from 'react';
 import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
+import { Link as RouterLink } from 'react-router-dom';
+
 import {
   Box,
   Button,

@@ -202,7 +202,6 @@ const PaidLenses = () => {
             
       ]}
       onRowClick={((evt, selectedRow) => {
-        console.log(selectedRow.Orderno)
         setPrice(selectedRow.price);
         setPaidAmount(selectedRow.paidAmount)
         setpartiallyPaidAmount(selectedRow.partiallyPaidAmount);

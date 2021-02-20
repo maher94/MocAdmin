@@ -162,7 +162,7 @@ const SuspendedProduct = () => {
           tooltip: 'Partially Paid',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+             
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Produit","PartiallyPaid");handleClickOpen("Partially Paid")}
@@ -173,7 +173,7 @@ const SuspendedProduct = () => {
           tooltip: 'Paid',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+              
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Produit","Paid");handleClickOpen("Paid")}

@@ -145,7 +145,7 @@ const WaitingValidationProduct = () => {
           tooltip: 'Validate',
           onClick: (event, rowData) =>{ 
             rowData.forEach(element => {
-              console.log(element.Orderno)
+              
            setRow(row.push(element.Orderno))
           });
             
@@ -157,7 +157,7 @@ const WaitingValidationProduct = () => {
           tooltip: 'Reject',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+              
            setRow(row.push(element.Orderno))
           });
             

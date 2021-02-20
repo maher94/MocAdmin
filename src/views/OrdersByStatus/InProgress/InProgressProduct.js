@@ -149,7 +149,7 @@ const InProgressProduct = () => {
           tooltip: 'Suspend',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+            //  console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Produit","Suspended");handleClickOpen("Suspended")}
@@ -161,7 +161,7 @@ const InProgressProduct = () => {
           tooltip: 'Partially Paid',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+              //console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Produit","PartiallyPaid");handleClickOpen("Partially Paid")}
@@ -172,7 +172,7 @@ const InProgressProduct = () => {
           tooltip: 'Paid',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+            //  console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Produit","Paid");handleClickOpen("Paid")}
