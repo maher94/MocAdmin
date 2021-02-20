@@ -176,7 +176,7 @@ const PartiallyPaidProduct = () => {
           onClick: (event, rowData) => {
             
             rowData.forEach(element => {
-              console.log(element.Orderno)
+             
            setRow(row.push(element.Orderno))
           });
           OrderAPI.updateStatus(row,"Produit","Paid");handleClickOpen("Paid")}
@@ -184,7 +184,6 @@ const PartiallyPaidProduct = () => {
         } 
       ]}
       onRowClick={((evt, selectedRow) => {
-        console.log(selectedRow.Orderno)
         setPrice(selectedRow.price);
         setPaidAmount(selectedRow.paidAmount)
         setpartiallyPaidAmount(selectedRow.partiallyPaidAmount);

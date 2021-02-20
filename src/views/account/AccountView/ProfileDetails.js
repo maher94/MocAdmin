@@ -15,16 +15,8 @@ import {
 
 const states = [
   {
-    value: 'alabama',
-    label: 'Alabama'
-  },
-  {
-    value: 'new-york',
-    label: 'New York'
-  },
-  {
-    value: 'san-francisco',
-    label: 'San Francisco'
+    value: 'Mahdia',
+    label: 'Mahdia'
   }
 ];
 
@@ -35,12 +27,12 @@ const useStyles = makeStyles(() => ({
 const ProfileDetails = ({ className, ...rest }) => {
   const classes = useStyles();
   const [values, setValues] = useState({
-    firstName: 'Katarina',
-    lastName: 'Smith',
-    email: 'demo@devias.io',
+    firstName: 'Abdelaziz  ',
+    lastName: 'Moussa ',
+    email: 'AbdelazizMoussa@gmail.com ',
     phone: '',
-    state: 'Alabama',
-    country: 'USA'
+    state: 'Mahdia',
+    country: 'Tunisia'
   });
 
   const handleChange = (event) => {

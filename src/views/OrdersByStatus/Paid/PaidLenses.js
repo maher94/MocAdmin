@@ -184,7 +184,6 @@ const PaidLenses = () => {
           tooltip: 'Partially Paid',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","PartiallyPaid");handleClickOpen("Partially Paid")}
@@ -195,7 +194,6 @@ const PaidLenses = () => {
           tooltip: 'Close',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","Closed");handleClickOpen("Closed")}

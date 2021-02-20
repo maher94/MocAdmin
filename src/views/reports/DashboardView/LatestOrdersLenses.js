@@ -4,6 +4,7 @@ import moment from 'moment';
 import { v4 as uuid } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import PropTypes from 'prop-types';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   Box,
   Button,
@@ -128,6 +129,8 @@ render() {
           endIcon={<ArrowRightIcon />}
           size="small"
           variant="text"
+          component={RouterLink}
+          to="../Orders"
         >
           View all
         </Button>

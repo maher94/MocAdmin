@@ -143,7 +143,6 @@ const RejectedProduct = () => {
           tooltip: 'Revert',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Produit","Validated");handleClickOpen("Validated")}
@@ -155,7 +154,6 @@ const RejectedProduct = () => {
           tooltip: 'Close',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              //console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","Closed");handleClickOpen("Closed")}

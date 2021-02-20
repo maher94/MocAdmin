@@ -48,7 +48,7 @@ const CustomerListView = () => {
   
   const classes = useStyles();
   //const [clients1] = useState(clients)
-  console.log(clients)
+ 
   
  
   

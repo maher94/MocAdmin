@@ -157,7 +157,7 @@ const InProgressLenses = () => {
           tooltip: 'Suspend',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+            //  console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","Suspended");handleClickOpen("Suspended")}
@@ -169,7 +169,7 @@ const InProgressLenses = () => {
           tooltip: 'Partially Paid',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
+             // console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","PartiallyPaid");handleClickOpen("Partially Paid")}

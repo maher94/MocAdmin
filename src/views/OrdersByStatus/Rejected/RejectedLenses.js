@@ -150,7 +150,6 @@ const RejectedLenses = () => {
           tooltip: 'Revert',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","Validated");handleClickOpen("Validated")}
@@ -161,7 +160,6 @@ const RejectedLenses = () => {
           tooltip: 'Close',
           onClick: (event, rowData) => {
             rowData.forEach(element => {
-              //console.log(element.Orderno)
            setRow(row.push(element.Orderno))
           });
             OrderAPI.updateStatus(row,"Lentille","Closed");handleClickOpen("Closed")}

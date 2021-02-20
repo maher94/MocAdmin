@@ -125,6 +125,8 @@ class LatestOrders extends Component {
             endIcon={<ArrowRightIcon />}
             size="small"
             variant="text"
+            component={RouterLink}
+            to="../Orders"
           >
             View all
         </Button>

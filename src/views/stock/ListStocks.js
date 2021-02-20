@@ -159,7 +159,8 @@ class ListStocks extends Component {
 
         onRowClick={((evt, selectedRow) =>
           //todo Dialog 
-          console.log(JSON.parse(localStorage.getItem('user')))
+          console.log("")
+           
 
 
         )}
